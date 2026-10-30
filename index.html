@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Tourist Royal | Private stays. Exclusive experiences.</title>
+<meta name="description" content="Plataforma digital que conecta a los turistas con los establecimientos privados de Barranquilla, en español e inglés.">
+<link rel="icon" href="assets/img/logo-dark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="brand" href="#top" aria-label="Smart Tourist Royal">
+    <img src="assets/img/logo-dark.png" alt="" width="34" height="30">
+    <span>Smart Tourist <em>Royal</em></span>
+  </a>
+  <nav id="menu" aria-label="Principal">
+    <a href="#nosotros" data-en="About us">Nosotros</a>
+    <a href="#servicios" data-en="Services">Servicios</a>
+    <a href="#sitios" data-en="Places to visit">Sitios</a>
+    <a href="#mapa" data-en="Map">Mapa</a>
+    <a href="#presupuesto" data-en="Smart budget">Presupuesto</a>
+    <a href="#equipo" data-en="Team">Equipo</a>
+    <a href="#contacto" data-en="Contact">Contacto</a>
+  </nav>
+  <div class="nav-end">
+    <button class="lang" id="lang" type="button" aria-label="Cambiar idioma / Change language"><span class="on">ES</span> / <span>EN</span></button>
+    <button class="burger" id="burger" type="button" aria-label="Menú" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-top">
+    <h1>Smart Tourist <em>Royal</em></h1>
+    <div class="hero-side">
+      <p data-en="A digital platform that connects tourists with the private establishments of Barranquilla.">Una plataforma digital que conecta a los turistas con los establecimientos privados de Barranquilla.</p>
+      <a class="link" href="#servicios" data-en="Explore what we offer">Explorar lo que ofrecemos</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="assets/img/logo-light.png" alt="Logo Smart Tourist Royal" width="240" height="212">
+    <p class="slogan">Private stays.<br><em>Exclusive experiences.</em></p>
+    <small data-en="Estancias privadas. Experiencias exclusivas.">Estancias privadas. Experiencias exclusivas.</small>
+  </div>
+</section>
+
+<section class="stats" aria-label="Datos del proyecto">
+  <div><b>3</b><span data-en="founding partners">socios fundadores</span></div>
+  <div><b>2</b><span data-en="languages: Spanish and English">idiomas: español e inglés</span></div>
+  <div><b>6</b><span data-en="specific objectives">objetivos específicos</span></div>
+  <p data-en="Smart Tourist Royal is the other side of Smart Tourist: it is focused on the private places and establishments of the city." >Smart Tourist Royal es la otra cara de Smart Tourist: está enfocada en los sitios y establecimientos privados de la ciudad.</p>
+</section>
+
+<section class="about" id="nosotros">
+  <div class="ph tall" role="img" aria-label="Espacio para foto de Barranquilla"></div>
+  <div class="about-text">
+    <h2 data-en="All of Barranquilla's private offer, in <em>one place</em>">Toda la oferta privada de Barranquilla, <em>en un solo lugar</em></h2>
+    <p data-en="Visitors have to go through different platforms, social networks, search engines and websites to learn about the establishments of Barranquilla. That scattered information makes it hard to choose according to each tourist's needs, interests and preferences.">Los visitantes deben recurrir a diferentes plataformas, redes sociales, buscadores y páginas web para conocer los establecimientos de Barranquilla. Esa información dispersa dificulta elegir según las necesidades, intereses y preferencias de cada turista.</p>
+    <p data-en="For foreign tourists there is also a language barrier. Smart Tourist Royal gathers location, services, schedules and descriptions in Spanish and English, so businesses reach a wider audience and visitors decide faster.">Para los turistas extranjeros existe además la barrera del idioma. Smart Tourist Royal reúne ubicación, servicios, horarios y descripción en español e inglés, para que los negocios lleguen a más público y los visitantes decidan más rápido.</p>
+    <a class="link" href="#equipo" data-en="Meet the team">Conocer al equipo</a>
+  </div>
+  <div class="ph tall alt" role="img" aria-label="Espacio para foto de establecimientos"></div>
+</section>
+
+<section class="why">
+  <h2 data-en="Why choose us?">¿Por qué elegirnos?</h2>
+  <ul>
+    <li><h3 data-en="Everything centralized">Todo centralizado</h3><p data-en="Location, schedules, services and contact details of many private establishments on a single platform.">Ubicación, horarios, servicios y datos de contacto de muchos establecimientos privados en una sola plataforma.</p></li>
+    <li><h3 data-en="Smart budget">Presupuesto inteligente</h3><p data-en="Tourists set how much they want to spend and find options that fit.">El turista define cuánto quiere gastar y encuentra opciones que se ajustan.</p></li>
+    <li><h3 data-en="Spanish and English">Español e inglés</h3><p data-en="Clear information for national and foreign visitors.">Información clara para visitantes nacionales y extranjeros.</p></li>
+    <li><h3 data-en="Visibility for businesses">Visibilidad para los negocios</h3><p data-en="Establishments present their products, services and experiences in an organized, attractive way.">Los establecimientos presentan sus productos, servicios y experiencias de forma organizada y atractiva.</p></li>
+  </ul>
+</section>
+
+<section class="services" id="servicios">
+  <h2 data-en="What we offer">¿Qué ofrecemos?</h2>
+  <p class="lead" data-en="Accommodation, restaurants, activities and places of interest in Barranquilla, grouped by categories and characteristics to make your search easier.">Hospedaje, restaurantes, actividades y sitios de interés de Barranquilla, organizados por categorías y características para facilitar tu búsqueda.</p>
+  <div class="tabs">
+    <div class="tablist" role="tablist">
+      <button role="tab" aria-selected="true" aria-controls="panel" data-i="0" data-en="Accommodation">Hospedaje</button>
+      <button role="tab" aria-selected="false" aria-controls="panel" data-i="1" data-en="Restaurants">Restaurantes</button>
+      <button role="tab" aria-selected="false" aria-controls="panel" data-i="2" data-en="Activities">Actividades</button>
+      <button role="tab" aria-selected="false" aria-controls="panel" data-i="3" data-en="Places of interest">Sitios de interés</button>
+    </div>
+    <div class="ph wide" role="img" aria-label="Espacio para foto del servicio"></div>
+    <div class="panel" id="panel" role="tabpanel" aria-live="polite">
+      <h3 id="panel-title">Hospedaje</h3>
+      <p id="panel-text">Opciones de hospedaje para encontrar dónde quedarse y planificar la estadía en Barranquilla.</p>
+      <p class="note" id="panel-note">Private stays: alojamientos privados, cómodos y elegantes.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sites" id="sitios">
+  <h2 data-en="Places you should visit">Sitios que debes visitar</h2>
+  <p class="lead" data-en="Accommodation, restaurants, wellness and attractions in Barranquilla, with their location, budget and everything you need to know before going.">Hospedaje, restaurantes, bienestar y atractivos de Barranquilla, con su ubicación, presupuesto y lo que debes saber antes de ir.</p>
+  <div class="sites-grid" id="sitios-grid"></div>
+</section>
+
+<section class="map-sec" id="mapa">
+  <h2 data-en="Barranquilla on the map">Barranquilla en el mapa</h2>
+  <p class="lead" data-en="Explore where each place is. Select one from the list or tap a marker. Places outside your smart budget fade out." >Explora dónde queda cada lugar. Elige uno de la lista o toca un marcador. Los lugares fuera de tu presupuesto inteligente se atenúan.</p>
+  <div class="map-wrap">
+    <div class="map-side">
+      <ul id="mapa-list"></ul>
+      <button class="link" type="button" id="map-reset" data-en="Show the whole city">Ver toda la ciudad</button>
+    </div>
+    <div id="mapa-canvas" role="region" aria-label="Mapa interactivo de Barranquilla"></div>
+  </div>
+</section>
+
+<section class="budget" id="presupuesto">
+  <div class="budget-head">
+    <h2 data-en="Tell us how much you want to spend. We find what fits.">Dinos cuánto quieres gastar. Nosotros encontramos lo que se ajusta.</h2>
+    <p data-en="Move the slider between $40,000 and $1,000,000 COP and choose what you are looking for. We recommend the place that best fits and show its photos.">Mueve el control entre $40.000 y $1.000.000 COP y elige qué buscas. Te recomendamos el lugar que mejor se ajusta y te mostramos sus fotos.</p>
+  </div>
+  <div class="budget-ui">
+    <div class="budget-set">
+      <label for="amt" data-en="My budget (COP)">Mi presupuesto (COP)</label>
+      <output id="out" for="amt">$150.000 COP</output>
+      <input id="amt" type="range" min="40000" max="1000000" step="10000" value="150000">
+      <div class="range-ends"><span>$40.000</span><span>$1.000.000</span></div>
+    </div>
+    <div class="chips" role="group" aria-label="Tipo de lugar">
+      <button type="button" data-cat="todos" aria-pressed="true" data-en="All">Todos</button>
+      <button type="button" data-cat="hospedaje" aria-pressed="false" data-en="Accommodation">Hospedaje</button>
+      <button type="button" data-cat="restaurantes" aria-pressed="false" data-en="Restaurants">Restaurantes</button>
+      <button type="button" data-cat="bienestar" aria-pressed="false" data-en="Wellness">Bienestar</button>
+      <button type="button" data-cat="sitios" aria-pressed="false" data-en="Places of interest">Sitios de interés</button>
+    </div>
+  </div>
+  <div class="result" id="result" aria-live="polite">
+    <div class="rec-main" id="rec-main"></div>
+    <div class="rec-others" id="rec-others"></div>
+  </div>
+</section>
+
+<section class="identity">
+  <article class="mission"><h2 data-en="Mission">Misión</h2><p data-en="To give national and foreign tourists an easy, organized and accessible digital platform to discover private establishments, services and experiences in Barranquilla, with clear information and tools like the smart budget. We also support establishments in their visibility and promotion within the city's tourism sector.">Brindar a turistas nacionales y extranjeros una plataforma digital fácil, organizada y accesible para descubrir establecimientos privados, servicios y experiencias en Barranquilla, con información clara y herramientas como el presupuesto inteligente. Además, apoyamos a los establecimientos en su visibilidad y promoción dentro del sector turístico de la ciudad.</p></article>
+  <article class="vision"><h2 data-en="Vision">Visión</h2><p data-en="By 2030, to be a recognized tourism platform in Barranquilla for making private establishments and experiences easy to reach, standing out for technology, innovation and organized information.">Para el año 2030, ser una plataforma turística reconocida en Barranquilla por facilitar el acceso a establecimientos privados y experiencias de la ciudad, destacándose por la tecnología, la innovación y la organización de la información.</p></article>
+  <article class="values"><h2 data-en="Values">Valores</h2>
+    <p data-en="Innovation, accessibility, trust, service, inclusion, commitment and organization.">Innovación, accesibilidad, confianza, servicio, inclusión, compromiso y organización.</p></article>
+</section>
+
+<section class="team" id="equipo">
+  <h2 data-en="Meet our team">Conoce nuestro equipo</h2>
+  <div class="people">
+    <article><span class="role" data-en="General director and administration">Director(a) general y administración</span><h3>Julys Valeth</h3><p data-en="Coordinates the team's activities, supervises the goals, organizes resources and leads planning and decision-making.">Coordina las actividades del equipo, supervisa el cumplimiento de los objetivos, organiza los recursos y lidera la planificación y la toma de decisiones.</p></article>
+    <article><span class="role" data-en="Technology and development director">Director(a) de tecnología y desarrollo</span><h3>Anghel Díaz</h3><p data-en="Designs and structures the platform, organizes establishment information and builds the smart budget, filters and search tools.">Diseña y estructura la plataforma, organiza la información de los establecimientos y desarrolla el presupuesto inteligente, los filtros y las herramientas de búsqueda.</p></article>
+    <article><span class="role" data-en="Marketing, tourism and customer service director">Director(a) de marketing, turismo y atención al cliente</span><h3>Cristel Ferrer</h3><p data-en="Designs promotion strategies, manages communication with users and establishments, and supports onboarding new businesses.">Diseña estrategias de promoción, gestiona la comunicación con usuarios y establecimientos, y apoya la incorporación de nuevos negocios.</p></article>
+  </div>
+  <p class="tutor" data-en="Project guided by instructor Carlos Charris.">Proyecto orientado por el instructor Carlos Charris.</p>
+</section>
+
+<section class="impact">
+  <h2 data-en="Expected impact">Impacto esperado</h2>
+  <dl>
+    <div><dt data-en="Academic">Académico</dt><dd data-en="Strengthens programming, web design, research and teamwork skills.">Fortalece los conocimientos en programación, diseño web, investigación y trabajo en equipo.</dd></div>
+    <div><dt data-en="Social">Social</dt><dd data-en="Helps visitors find accommodation, restaurants, activities and places of interest.">Facilita a los visitantes la búsqueda de hospedajes, restaurantes, actividades y sitios de interés.</dd></div>
+    <div><dt data-en="Productive">Productivo</dt><dd data-en="Gives visibility to local places and services and can attract more visitors to local businesses.">Da visibilidad a lugares y servicios locales y puede atraer más visitantes a los negocios.</dd></div>
+    <div><dt data-en="Environmental">Ambiental</dt><dd data-en="As a digital platform, it reduces the need for printed brochures and guides.">Al ser digital, reduce la necesidad de imprimir folletos y guías turísticas.</dd></div>
+  </dl>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="contact-intro">
+    <h2 data-en="Contact us">Contáctanos</h2>
+    <p data-en="Do you own an establishment in Barranquilla or are you planning a trip? Write to us and we will get back to you.">¿Tienes un establecimiento en Barranquilla o estás planeando un viaje? Escríbenos y te responderemos.</p>
+  </div>
+  <div class="contact-cols">
+    <div>
+      <h3 data-en="Email">Correos</h3>
+      <ul>
+        <li><span data-en="General">General</span><a href="mailto:contacto@smarttouristroyal.com">contacto@smarttouristroyal.com</a></li>
+        <li><span data-en="Businesses">Negocios</span><a href="mailto:negocios@smarttouristroyal.com">negocios@smarttouristroyal.com</a></li>
+        <li><span data-en="Tourists">Turistas</span><a href="mailto:turistas@smarttouristroyal.com">turistas@smarttouristroyal.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 data-en="Social media">Redes sociales</h3>
+      <ul>
+        <li><span>Instagram</span><a href="#contacto">@smarttouristroyal</a></li>
+        <li><span>Facebook</span><a href="#contacto">/SmartTouristRoyal</a></li>
+        <li><span>TikTok</span><a href="#contacto">@smarttouristroyal</a></li>
+        <li><span>LinkedIn</span><a href="#contacto">/company/smart-tourist-royal</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="foot-brand">
+    <img src="assets/img/logo-light.png" alt="" width="56" height="50">
+    <div><strong>Smart Tourist <em>Royal</em></strong><p>Private stays. Exclusive experiences.</p></div>
+  </div>
+  <p data-en="Training project, SENATIC: articulation with secondary education. Barranquilla, Atlántico.">Proyecto formativo SENATIC: articulación con la educación media. Barranquilla, Atlántico.</p>
+  <div class="logos"><img src="assets/img/sena.png" alt="SENA" height="52"><img src="assets/img/senatic.png" alt="SENATIC" height="52"><img src="assets/img/mintic.png" alt="MinTIC" height="52"></div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="js/negocios.js"></script>
+<script src="js/sitios.js"></script>
+<script src="js/mapa.js"></script>
+<script src="js/presupuesto.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
